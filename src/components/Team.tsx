@@ -30,9 +30,9 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-white">
+    <section id="team" className="py-20 bg-white reveal-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 text-reveal">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Meet Our <span className="text-orange-500">Super Team</span>
           </h2>
@@ -42,11 +42,11 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 stagger-item">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="text-center group"
+              className="text-center group stagger-child"
             >
               <div className="relative mb-6">
                 <div className="w-48 h-48 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-orange-100 to-red-100 p-2">

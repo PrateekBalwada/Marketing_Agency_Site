@@ -48,9 +48,9 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-gray-50">
+    <section id="portfolio" className="py-20 bg-gray-50 reveal-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 text-reveal">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Success <span className="text-orange-500">Stories</span>
           </h2>
@@ -60,11 +60,11 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-item">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 group"
+              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 group stagger-child"
             >
               <div className="relative overflow-hidden">
                 <img

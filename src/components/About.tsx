@@ -10,26 +10,26 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-blue-50 to-white">
+    <section id="about" className="py-20 bg-gradient-to-br from-blue-50 to-white reveal-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-reveal">
               We Are Your Marketing 
               <span className="text-orange-500"> Superheroes</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed text-reveal">
               Founded with a mission to revolutionize how businesses connect with their audiences, 
               we've grown into a powerhouse of creative minds, strategic thinkers, and data wizards.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed text-reveal">
               Our approach combines cutting-edge technology with human creativity to deliver 
               campaigns that don't just reach your audience – they move them to action.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6 stagger-item">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
+                <div key={index} className="text-center stagger-child">
                   <div className="flex justify-center mb-2">
                     <stat.icon className="h-8 w-8 text-orange-500" />
                   </div>
@@ -41,7 +41,7 @@ const About = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl p-8 h-96 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl p-8 h-96 flex items-center justify-center scale-on-scroll">
               <div className="text-center">
                 <div className="w-32 h-32 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mx-auto mb-6 flex items-center justify-center">
                   <Zap className="h-16 w-16 text-white" />

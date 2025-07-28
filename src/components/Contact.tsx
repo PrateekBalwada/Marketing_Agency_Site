@@ -26,9 +26,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-orange-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-orange-50 reveal-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 text-reveal">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Ready to <span className="text-orange-500">Get Started?</span>
           </h2>
@@ -39,12 +39,12 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-8 stagger-item">
             <div className="flex items-start space-x-4">
-              <div className="bg-orange-100 p-3 rounded-full">
+              <div className="bg-orange-100 p-3 rounded-full stagger-child">
                 <Mail className="h-6 w-6 text-orange-500" />
               </div>
-              <div>
+              <div className="stagger-child">
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Email Us</h3>
                 <p className="text-gray-600">hello@superpower-agency.com</p>
                 <p className="text-gray-600">info@superpower-agency.com</p>
@@ -52,10 +52,10 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-orange-100 p-3 rounded-full">
+              <div className="bg-orange-100 p-3 rounded-full stagger-child">
                 <Phone className="h-6 w-6 text-orange-500" />
               </div>
-              <div>
+              <div className="stagger-child">
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Call Us</h3>
                 <p className="text-gray-600">+1 (555) 123-4567</p>
                 <p className="text-gray-600">+1 (555) 987-6543</p>
@@ -63,10 +63,10 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-orange-100 p-3 rounded-full">
+              <div className="bg-orange-100 p-3 rounded-full stagger-child">
                 <MapPin className="h-6 w-6 text-orange-500" />
               </div>
-              <div>
+              <div className="stagger-child">
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Visit Us</h3>
                 <p className="text-gray-600">123 Marketing Street</p>
                 <p className="text-gray-600">New York, NY 10001</p>
@@ -75,7 +75,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 scale-on-scroll">
             <div className="bg-white rounded-2xl shadow-lg p-8">
               {isSubmitted ? (
                 <div className="text-center py-12">
